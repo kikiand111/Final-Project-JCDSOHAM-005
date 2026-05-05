@@ -1,174 +1,61 @@
-# Hotel Booking System
+# Hotel Booking Analytics Dashboard
 
-A structured and scalable Hotel Booking Management System designed to handle hotel listings, room availability, customer reservations, and payment processing through a clean relational data model.
+## Overview
+This project is an end-to-end data analytics initiative developed by **Ika, Kiki, and Aulia**. The project focuses on analyzing hotel booking datasets to uncover patterns in cancellation behavior, revenue performance, and customer insights. By leveraging interactive visualizations, this project aims to facilitate data-driven decision-making for hotel operations, pricing strategies, and customer relationship management.
 
----
+## Business Context
+**Hotel Group X** faces challenges with high booking cancellation rates. These cancellations lead to significant revenue leakage, operational inefficiencies, and increased business risk. Understanding the underlying drivers—such as booking lead times, distribution channels, and customer demographics—is essential for maintaining a competitive edge.
 
-## Project Overview
+### Business Objectives
+* **Minimize Revenue Leakage:** Reduce the financial impact of cancellations and no-shows.
+* **Cancellation Analysis:** Identify key predictors and drivers of booking cancellations.
+* **Operational Optimization:** Improve overbooking decisions and room allocation efficiency.
+* **Strategic Pricing:** Optimize ADR (Average Daily Rate) and RevPAR based on historical demand patterns.
+* **Customer Loyalty:** Understand behavior differences between repeat and first-time guests to improve retention.
 
-This project is a backend-oriented system that simulates a real-world hotel booking platform. It focuses on data modeling, relational database design, and booking workflow logic to ensure efficient reservation handling.
+## Key Stakeholders
+* **Hotel Management:** Strategic oversight and performance monitoring.
+* **Revenue Management:** Pricing strategy and revenue optimization.
+* **Reservation & Operations:** Daily inventory management and guest services.
+* **Data & IT Team:** Data governance and analytical infrastructure.
 
-The system is designed to be:
-- Scalable
-- Modular
-- Easy to extend for production-level features
+## Key Performance Indicators (KPIs)
+* **Cancel Rate:** Percentage of total bookings that were cancelled.
+* **Lost Revenue:** Potential revenue lost due to cancellations.
+* **Realized Revenue:** Actual revenue generated from completed stays.
+* **ADR (Average Daily Rate):** Average income earned per occupied room.
+* **Lead Time:** The number of days between booking and arrival.
+* **RevPAR:** Revenue per Available Room.
+* **Repeat Guest %:** The proportion of bookings from returning customers.
 
----
+## Dashboard Structure
+The analysis is categorized into five specialized dashboards:
 
-## Objectives
+1.  **Executive Overview:** A high-level summary of performance metrics and macro trends for quick executive review.
+2.  **Cancellation Analysis:** Deep dive into risk factors including lead time, market segments, and deposit types.
+3.  **Revenue Analysis:** Tracking financial performance, seasonal pricing trends, and segment contributions.
+4.  **Customer Behavior:** Segmentation analysis focusing on loyalty, guest types, and special requests.
+5.  **Operational Excellence:** Monitoring waiting lists, booking changes, and room type discrepancies.
 
-- Design a normalized relational database for hotel booking
-- Manage users, hotels, rooms, bookings, and payments
-- Implement a clear booking lifecycle
-- Ensure data consistency and integrity across entities
-- Provide a foundation for a production-grade booking system
+## Key Insights
+* **Cancellation Risk:** Bookings with longer lead times exhibit a significantly higher probability of cancellation.
+* **Segment Impact:** Specific market segments and distribution channels contribute disproportionately to revenue volatility.
+* **Stability of Loyalty:** Repeat guests have lower cancellation rates and provide a more stable revenue stream compared to new customers.
+* **Seasonality:** Revenue and ADR fluctuate heavily based on seasonal demand, requiring dynamic pricing adjustments.
 
----
+## Tools and Technologies
+* **Tableau:** Primary tool for data visualization and dashboard development.
+* **Excel / CSV:** Data source and initial data processing.
+* **Data Cleaning:** Pre-processing and Exploratory Data Analysis (EDA) conducted to ensure data integrity.
 
-## System Design and Data Modeling
+## Project Deliverables
+* **Tableau Public Dashboard:** [Insert Link Here]
+* **Source Dataset:** Hotel Booking Demand Dataset (Publicly available).
 
-### Core Entities
-
-#### Users
-Stores customer information.
-
-- id_user (int, primary key)
-- name (string)
-- email (string, unique)
-- phone (string)
-
----
-
-#### Hotels
-Represents hotel properties.
-
-- id_hotel (int, primary key)
-- name (string)
-- location (string)
-- rating (float)
-
----
-
-#### Rooms
-Represents available hotel rooms.
-
-- id_room (int, primary key)
-- id_hotel (int, foreign key)
-- room_type (string)
-- price (decimal)
-- status (string: Available / Booked)
-
----
-
-#### Bookings
-Handles reservation transactions.
-
-- id_booking (int, primary key)
-- id_user (int, foreign key)
-- id_room (int, foreign key)
-- check_in (date)
-- check_out (date)
-- status (string: Pending / Confirmed / Completed)
+## Project Team
+* **Ika**
+* **Kiki**
+* **Aulia**
 
 ---
-
-#### Payments
-Handles booking payments.
-
-- id_payment (int, primary key)
-- id_booking (int, foreign key)
-- method (string)
-- total_amount (decimal)
-- status (string: Paid / Unpaid)
-
----
-
-## Database Relationships
-
-- User has many Bookings
-- Hotel has many Rooms
-- Room has many Bookings
-- Booking has one Payment
-
----
-
-## System Workflow
-
-1. User registers or logs in
-2. User browses available hotels
-3. User selects a room
-4. System checks room availability
-5. Booking is created with status Pending
-6. User completes payment
-7. System validates payment
-8. Booking status is updated to Confirmed
-9. After checkout, status becomes Completed
-
----
-
-## Architecture
-
-Client / API Consumer  
-→ Controller Layer (API Routes)  
-→ Service Layer (Business Logic)  
-→ Database Layer (Relational Database)
-
----
-
-## Features
-
-- User management system
-- Hotel and room listing
-- Room availability tracking
-- Booking lifecycle management
-- Payment tracking system
-- Structured relational database design
-
----
-
-## Tech Stack (Suggested)
-
-- Database: MySQL / PostgreSQL
-- Backend: Node.js / Python (Flask / Django)
-- API: RESTful API
-- Design: Entity Relationship Diagram (ERD)
-
----
-
-## ERD Overview
-
-User ───< Booking >─── Room ───< Hotel  
-             │  
-             └──── Payment  
-
----
-
-## Future Improvements
-
-- JWT authentication and authorization
-- Admin dashboard for hotel management
-- Real-time room availability updates
-- Payment gateway integration
-- Review and rating system
-- Discount and promotion system
-
----
-
-## Project Status
-
-- Core system design completed
-- Database modeling completed
-- Ready for backend implementation
-- Optional frontend integration available
-
----
-
-## License
-
-This project is for educational and portfolio purposes.
-
----
-
-## Author
-
-Developed as part of a structured system design and database modeling learning project.
+*Note: This project was developed for educational and portfolio purposes to demonstrate proficiency in business intelligence and data storytelling.*
