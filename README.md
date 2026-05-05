@@ -43,6 +43,7 @@ To proactively address cancellations, we implemented a predictive modeling workf
 
 ## Project Deliverables
 * **Interactive Dashboard**: Tableau Public Portfolio. https://public.tableau.com/app/profile/ika.christine.purba/viz/hotelbookingcancellation_17775939354600/Dash_BusinesOverview
+* **link google drive hasil final model dan streamlit** : https://drive.google.com/drive/folders/1Lr5ZKjMFGcHcFzKKWeVOwBz_cJL1BQ3L?usp=sharing
 * **Dataset**: Hotel Booking Demand Dataset (Publicly available).
 
 ## Project Team
