@@ -49,7 +49,7 @@ The analysis is categorized into five specialized dashboards:
 * **Data Cleaning:** Pre-processing and Exploratory Data Analysis (EDA) conducted to ensure data integrity.
 
 ## Project Deliverables
-* **Tableau Public Dashboard:** [Insert Link Here]
+* **Tableau Public Dashboard:**(https://public.tableau.com/app/profile/ika.christine.purba/viz/hotelbookingcancellation_17775939354600/Dash_BusinesOverview)
 * **Source Dataset:** Hotel Booking Demand Dataset (Publicly available).
 
 ## Project Team
