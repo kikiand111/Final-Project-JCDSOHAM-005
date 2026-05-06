@@ -1,0 +1,2 @@
+deployment/*.pkl filter=lfs diff=lfs merge=lfs -text
+deployment/*.csv filter=lfs diff=lfs merge=lfs -text
