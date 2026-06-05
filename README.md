@@ -179,7 +179,7 @@ Threshold 0.6 dipilih berdasarkan analisis biaya asimetris antara dua jenis kesa
 
 | Deliverable | Link |
 |---|---|
-| 📊 Tableau Dashboard | [Hotel Booking Cancellation Dashboard]|([https://public.tableau.com/app/profile/ika.christine.purba/viz/hotelbookingcancellation_17775939354600/Dash_BusinesOverview]|(https://public.tableau.com/views/hotelbookingcancellation_17775939354600/Dash_BusinessOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)) |
+| 📊 Tableau Dashboard | [Hotel Booking Cancellation Dashboard]|(https://public.tableau.com/app/profile/ika.christine.purba/viz/hotelbookingcancellation_17775939354600/Dash_BusinessOverview) |
 | 🌐 Streamlit App & Final Model | [Google Drive](https://drive.google.com/drive/folders/1Lr5ZKjMFGcHcFzKKWeVOwBz_cJL1BQ3L?usp=sharing) |
 | 📦 Dataset | Hotel Booking Demand Dataset (Kaggle — Publik) |
 | Streamlit Link | https://hotel-prediction-ffvtzqj2gwtmgjn5a4gmys.streamlit.app/ |
